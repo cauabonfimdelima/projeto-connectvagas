@@ -14,8 +14,9 @@
 # Ignorar arquivos de chave privada
 *.pem
 
-# Ignorar arquivos de ambiente
+# Ignora arquivos .env
 frontend/.env
+backend/.env
 *.env
 
 # misc

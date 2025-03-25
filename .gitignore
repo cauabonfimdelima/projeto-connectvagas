@@ -15,7 +15,8 @@
 *.pem
 
 # Ignorar arquivos de ambiente
-.env
+frontend/.env
+
 
 # misc
 .DS_Store

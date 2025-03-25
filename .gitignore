@@ -16,7 +16,7 @@
 
 # Ignorar arquivos de ambiente
 frontend/.env
-
+*.env
 
 # misc
 .DS_Store

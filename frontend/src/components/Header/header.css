@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffd401;
+    filter: brightness(90%);
+    /* background-color: #121212; */
+    /*b89b0b*/
+    /*ffd401*/
+    /*121212*/
+    height: 80px;
+}
+
+header div h2{
+    /* color: #FFF; */
+    color: #121212;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    cursor: pointer;
+    color: #121212;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.5s all;
+    
+}
+
+a:hover{
+    color: #FFF;
+}
+
+a{
+    text-decoration: none;
+    color: #121212;
+}
+
+.btnCandidato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: transparent;
+    /* border: 1px solid #222; */
+    /* border: none; */
+    color: #000;
+    font-weight: bold;
+}
+
+.btnEmpresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: transparent;
+    /* border: 1px solid #222; */
+    /* border: none; */
+    color: #000;
+    font-weight: bold;
+}
+
+.btnAnunciarVaga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: transparent;
+    /* border: 1px solid #222; */
+    /* border: none; */
+    color: #000;
+    font-weight: bold;
+}
+
+.btnCandidato:hover{
+    cursor: pointer;
+    background-color: #b89b0b;
+    color: #FFF;
+}
+
+.btnEmpresa:hover{
+    cursor: pointer;
+    background-color: #b89b0b;
+    color: #FFF;
+}
+
+.btnAnunciarVaga:hover{
+    cursor: pointer;
+    background-color: #b89b0b;
+    color: #FFF;
+}
+
+.btnSair{
+    border: 1px solid red;
+    /* border: none; */
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    width: 100px;
+    background-color: transparent;
+}
+
+.btnSair:hover{
+    cursor: pointer;
+    background-color:red;
+    color: #FFF ;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ background-color: #f0f0f0;
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ min-width: 150px;
+ z-index: 9999;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .menu a:hover {
+    background-color: #ddd;
+  }
+  
+  
+  .menu-item:hover .menu {
+    display: block;
+  }
+
+  .btnCandidato:hover .menu{
+    display: block;
+  }

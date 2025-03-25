@@ -1,0 +1,214 @@
+
+.containerPerfil {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.profileContainer {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    background: #ffffff;
+    width: 90%;
+    min-width: 800px;
+    min-height: 70vh;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+/* Cabeçalho do perfil */
+.profileHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profileHeaderH2 h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Informações do perfil */
+.profileInfos {
+    width: 100%;
+    text-align: center;
+}
+
+.profileInfos p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Botão de edição */
+.divEdit {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.btnEdit {
+    background-color: #b89b0b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btnEdit:hover {
+    background-color: #ffd401;
+}
+
+/* Inputs de edição */
+.inputEdit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputEdit input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.inputEdit input:focus {
+    border-color: #ffd401;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.divButtons button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.divButtons button:first-child {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.divButtons button:first-child:hover {
+    background-color: #27ae60;
+}
+
+.divButtons button:last-child {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.divButtons button:last-child:hover {
+    background-color: #c0392b;
+}
+
+.minhasCandidaturas{
+    width: 50%;
+}
+
+.minhasCandidaturas h3{
+    text-align: center;
+}
+
+.minhasCandidaturas ul{
+    list-style: none;
+}
+
+.vagas{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+    margin-top: 1%;
+}
+
+.vagasInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        flex-basis: 100%;
+    /* border: 1px solid black; */
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.buttons button:first-child{
+    background-color: #ffd401;
+}
+
+.buttons button:first-child:hover{
+    background-color: #b89b0b;
+}
+
+.buttons button{
+    display: flex;
+    margin-left: 1.5%;
+    background-color: rgb(196, 48, 48);
+    color: #000;
+    font-weight: bold;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(114, 30, 30);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .profileContainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profileHeaderH2 h2 {
+        font-size: 20px;
+    }
+
+    .profileInfos p {
+        font-size: 14px;
+    }
+
+    .inputEdit input {
+        width: 100%;
+    }
+
+    .divButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divButtons button {
+        width: 100%;
+    }
+}

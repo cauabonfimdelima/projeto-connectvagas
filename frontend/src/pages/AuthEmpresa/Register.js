@@ -103,7 +103,7 @@ function RegisterEmpresa(){
             <label>CNPJ:</label>
             <input type="number"  
             className='input-senha' 
-            placeholder='digite sua senha'
+            placeholder='00.000.000/0000-00'
             required
             value={cnpj}
             onChange={(e) => setCnpj(e.target.value)}
@@ -112,7 +112,7 @@ function RegisterEmpresa(){
             <label>CEP:</label>
             <input type="number"  
             className='input-senha' 
-            placeholder='digite sua senha'
+            placeholder='00000-000'
             required
             value={cep}
             onChange={(e) => setCep(e.target.value)}

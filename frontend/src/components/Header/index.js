@@ -8,6 +8,7 @@ function Header(){
     const navigate = useNavigate();
     const [logado, setLogado] = useState(false);
     const [tipoUsuario, setTipoUsuario] = useState("");
+    const [menuAberto, setMenuAberto] = useState(false);
 
     useEffect(()=>{
         const token = localStorage.getItem('token');
@@ -40,6 +41,10 @@ function Header(){
         navigate("/empresa/publicarVaga");
     }
 
+    const toggleMenu = () => {
+        setMenuAberto(!menuAberto);
+    };
+
     return(
         <>
         <header>
@@ -47,8 +52,13 @@ function Header(){
                 <a href="/"><h2>Connect Vagas</h2></a>
             </div>
             
+
+         <button className="hamburguer" onClick={toggleMenu}>
+                ☰
+            </button>
+
             <nav>
-                <ul>   
+                <ul className="desktop-menu">   
                     {logado ? (
                     <>
                         {tipoUsuario === "candidato" ? (
@@ -85,6 +95,37 @@ function Header(){
                     )}
                 </ul>
             </nav>
+            
+            {menuAberto && (
+                <div className="mobile-menu">
+                    <ul>
+                        {logado ? (
+                            <>
+                            {tipoUsuario === "candidato" && (
+                                <>
+                                <li onClick={handleCandidatoArea}>Área do Candidato</li>
+                                <li onClick={handleLogout}>Sair</li>
+                                </>
+                            )}
+                            {tipoUsuario === "empresa" && (
+                                <>
+                                <li onClick={handleAnunciarVaga}>Anunciar Vaga</li>
+                                <li onClick={handleEmpresaArea}>Área da Empresa</li>
+                                <li onClick={handleLogout}>Sair</li>
+                                </>
+                            )}
+                            </>
+                        ) : (
+                            <>
+                            <li><a href="/register/candidato">Registrar Candidato</a></li>
+                            <li><a href="/login/candidato">Login Candidato</a></li>
+                            <li><a href="/register/empresa">Registrar Empresa</a></li>
+                            <li><a href="/login/empresa">Login Empresa</a></li>
+                            </>
+                        )}
+                    </ul>
+                </div>
+            )}
         </header>
         </>
     )

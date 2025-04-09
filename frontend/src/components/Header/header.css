@@ -155,3 +155,62 @@ a{
   .btnCandidato:hover .menu{
     display: block;
   }
+
+  .hamburguer {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #121212;
+    margin-right: 20px;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #ffd401;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .mobile-menu ul li:hover {
+    background-color: #b89b0b;
+    color: #fff;
+  }
+  
+
+  @media (max-width: 800px){
+
+    header{
+        /* border: 1px solid black; */
+        justify-content: space-between;
+    }
+    nav .desktop-menu {
+        display: none;
+      }
+    
+      .hamburguer {
+        /* border: 1px solid black; */
+        width: 20%;
+        display: block;
+      }
+    }

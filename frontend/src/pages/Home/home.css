@@ -200,6 +200,11 @@ body{
   }
 
   @media (max-width: 800px){
+
+    .div-inputs-query{
+      margin-left: 5%;
+    }
+    
     .jobs-grid {
         list-style: none;
         display: grid;

@@ -15,7 +15,8 @@ app.use(routes);
 
 connectDB();
 
-const PORT = process.env.PORT || 3001
+// const PORT = process.env.PORT || 3001
 
-app.listen(PORT, ()=> console.log(`Servidor rodando na ${PORT}`));
+// app.listen(PORT, ()=> console.log(`Servidor rodando na ${PORT}`));
 
+module.exports = app;
